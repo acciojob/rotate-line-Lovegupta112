@@ -4,18 +4,22 @@
     width:300px;
     height:300px;
     border:2px solid black;
-    display:flex;
+    /* display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    position: relative;
 }
 
 #line{
     /* border:2px solid black; */
     width:200px;
     height:2px;
-    background-color: black;
+    background-color:rgb(0, 0, 0);
     transform:rotate(50deg);
     animation: move 5s linear infinite forwards;
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }
 @keyframes move{
     from{
